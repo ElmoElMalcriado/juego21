@@ -17,8 +17,8 @@ create table if not exists public.profiles (
 create table if not exists public.admins (email text primary key);
 
 -- Administrador (borra el correo de ejemplo si quedó de una ejecución anterior)
-delete from public.admins where email = 'TU_CORREO@gmail.com';
-insert into public.admins (email) values ('TU_CORREO@gmail.com') on conflict do nothing;
+delete from public.admins where email = 'josesalcedl818@gmail.com';
+insert into public.admins (email) values ('josesalcedl818@gmail.com') on conflict do nothing;
 
 alter table public.profiles enable row level security;
 alter table public.admins enable row level security;
